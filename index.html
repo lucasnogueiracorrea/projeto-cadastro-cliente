@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+    <main>
+        <div id="box-principal">
+            <div id=box-cadastro>
+                <div id="box-nome">
+                    <label class="box-label" for="#">Nome:</label>
+                    <input class="box-input" id="input-name" type="text" placeholder="Digite seu nome...">
+                </div>
+    
+                <div id="box-email">
+                    <label class="box-label" for="#">E-mail:</label>
+                    <input class="box-input" id="input-email" type="email" placeholder="Digite seu e-mail...">
+                </div>
+    
+                <div id="box-telefone">
+                    <label class="box-label" for="#">Telefone:</label>
+                    <input class="box-input" id="input-tel" type="tel" placeholder="(99) 93131-3131">
+                </div>
+    
+                <div id="box-cidade">
+                    <label class="box-label" for="#">Cidade:</label>
+                    <input class="box-input" id="input-cidade" type="text" placeholder="Digite sua cidade...">
+                </div>
+    
+                <button id="addClienteBtn">Cadastrar</button>
+            </div>
+        </div>
+
+        <div id="box-secundaria">
+            <ul>
+                <li>Nome</li>
+                <li class="li-email">E-mail</li>
+                <li>Telefone</li>
+                <li>Cidade</li>
+            </ul>
+        </div>
+
+        
+        <div id="box-template">
+            <div class="hide template" id="box-footer">
+                <ul>
+                    <li>
+                        <span class="span-list" id="span-nome"></span>
+                        <span  class="span-list li-email" id="span-email"></span>
+                        <span class="span-list" id="span-telefone"></span>
+                        <span class="span-list" id="span-cidade"></span>
+                    </li>
+                </ul>
+                <button id="btn-remove">X</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
